@@ -2,8 +2,6 @@ var player_8py =
 [
     [ "player.Player", "classplayer_1_1_player.html", "classplayer_1_1_player" ],
     [ "BUL_SPD", "player_8py.html#a347937a0918ee67477fe0583e61f3a4b", null ],
-    [ "CENTERING_X", "player_8py.html#aacaebc767a23386c2543ea2e59a21760", null ],
-    [ "CENTERING_Y", "player_8py.html#a5bd806af51dfc563af15dadf4fc6bd68", null ],
     [ "MAP_W", "player_8py.html#a0dbc168b7a59af6aad8608780ec3d1a2", null ],
     [ "PLAYER_BBOX_H", "player_8py.html#a514f2a4212e45f711e14669a31d4a206", null ],
     [ "PLAYER_BBOX_W", "player_8py.html#af7a374353d5f81d59f36135fd43f3584", null ],
@@ -18,6 +16,5 @@ var player_8py =
     [ "PLAYER_SPR_Y", "player_8py.html#a07a9a82d546413590c014e53ca90eb7c", null ],
     [ "SHOOT_TIME", "player_8py.html#a78ee76234c189d4157ea08c3e22119ee", null ],
     [ "solid_tiles", "player_8py.html#ae7134b176d62ad3c0b45b2bdbd9415f3", null ],
-    [ "TILE_SIZE", "player_8py.html#a4bcccc39e70b1c66c35d1b8ce9445805", null ],
-    [ "WIN_TILE", "player_8py.html#a8d593c7013b7b4aeac50bdb60942ad78", null ]
+    [ "TILE_SIZE", "player_8py.html#a4bcccc39e70b1c66c35d1b8ce9445805", null ]
 ];

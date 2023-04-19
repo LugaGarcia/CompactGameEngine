@@ -24,8 +24,8 @@
 */
 var NAVTREE =
 [
-  [ "Compact Game Engine", "index.html", [
-    [ "Add any additional notes here", "md__engine__r_e_a_d_m_e.html", [
+  [ "Nebula Game Engine", "index.html", [
+    [ "DOCUMENTATION for Nebula", "md__engine__r_e_a_d_m_e.html", [
       [ "Game/Engine Publicity", "md__engine__r_e_a_d_m_e.html#autotoc_md1", null ],
       [ "Compilation Instructions", "md__engine__r_e_a_d_m_e.html#autotoc_md2", null ],
       [ "Project Hieararchy", "md__engine__r_e_a_d_m_e.html#autotoc_md3", [
@@ -69,19 +69,19 @@ var NAVTREEINDEX =
 [
 "_audio_8cpp.html",
 "classexplosion_1_1_explosion_particle.html#a9ac7743882dbdf47bdbf211b33611a7f",
-"glad_8h.html#a0da0630e92d17a649f7209148fe249af",
-"glad_8h.html#a2497c5831528b8d1a419dfb409ba276d",
-"glad_8h.html#a3c3c26c15768b850c1b82ab4a5d77245",
-"glad_8h.html#a5155c381bb0f1f2d9d392e0440eb983b",
-"glad_8h.html#a66df9083d62016fa3bb45bec6f4f48e7",
-"glad_8h.html#a7c93daeeb5df73c848ded9bd15d5c31f",
-"glad_8h.html#a908891f3c7cc2d84decc363757186c69",
-"glad_8h.html#aa68335e779479b2d957ccc7d755d9e01",
-"glad_8h.html#abbc65ca04170d8ac3200dc8c5be26946",
-"glad_8h.html#ad04f223f50b2da67ee2f9fae646e619a",
-"glad_8h.html#ae729d6f714f0d94a71c83147bf0f0020",
-"glad_8h.html#afbb59b10257219344de62f02f5ac8150",
-"namespaceplayer.html#af7a374353d5f81d59f36135fd43f3584"
+"glad_8h.html#a0ccb2626b15d645b5aacc5d5d6057bde",
+"glad_8h.html#a239f4edbbd9748d15b888a990fb732f6",
+"glad_8h.html#a3bc66a02ab7134459ee7f3307dd1eb65",
+"glad_8h.html#a511181ed70d9d4cf7463a0ffe39f836d",
+"glad_8h.html#a6607ca2b6272faaf7c6840bc32e5ce0b",
+"glad_8h.html#a7bf2256b929a7fe611f003f481b48cba",
+"glad_8h.html#a8f909bff5ba30b8556a7f30972c28aa7",
+"glad_8h.html#aa5db837b996108c90673c2bc27976301",
+"glad_8h.html#abad08a54e753dc16e695a7756c2cf608",
+"glad_8h.html#acf861c0c475b4cc6d7a46e0d61c8b173",
+"glad_8h.html#ae64973345479169d6b1a2698bb9d30f8",
+"glad_8h.html#afa821271f6254cd1623a1311e608df17",
+"namespaceplayer.html#a4bcccc39e70b1c66c35d1b8ce9445805"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

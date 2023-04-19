@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Compact Game Engine: Engine/assets/scripts/player.py File Reference</title>
+<title>Nebula Game Engine: Engine/assets/scripts/player.py File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,9 +26,9 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="EngineIcon.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">Compact Game Engine<span id="projectnumber">&#160;1.08</span>
+   <div id="projectname">Nebula Game Engine<span id="projectnumber">&#160;1.14</span>
    </div>
-   <div id="projectbrief">A small game engine with GUI compatability, by Safi Azam Hyun Joon Kim, Tanner Badey, and Luis Garcia</div>
+   <div id="projectbrief">A small game engine for 2D shooters with audio, by Safi Azam Hyun Joon Kim, Tanner Badey, and Luis Garcia</div>
   </td>
  </tr>
  </tbody>
@@ -104,6 +104,7 @@ $(document).ready(function(){initNavTree('player_8py.html',''); initResizable();
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplayer_1_1_player.html">player.Player</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class consisting of locatxion, score, level, shooting timer.  <a href="classplayer_1_1_player.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
@@ -113,28 +114,24 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:aacaebc767a23386c2543ea2e59a21760"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceplayer.html#aacaebc767a23386c2543ea2e59a21760">player.CENTERING_X</a> = 80</td></tr>
-<tr class="separator:aacaebc767a23386c2543ea2e59a21760"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5bd806af51dfc563af15dadf4fc6bd68"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceplayer.html#a5bd806af51dfc563af15dadf4fc6bd68">player.CENTERING_Y</a> = 80</td></tr>
-<tr class="separator:a5bd806af51dfc563af15dadf4fc6bd68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78ee76234c189d4157ea08c3e22119ee"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceplayer.html#a78ee76234c189d4157ea08c3e22119ee">player.SHOOT_TIME</a> = 2</td></tr>
 <tr class="separator:a78ee76234c189d4157ea08c3e22119ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69e9efb15f1b9a949d1ba82bcbdae7e4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceplayer.html#a69e9efb15f1b9a949d1ba82bcbdae7e4">player.PLAYER_BBOX_X</a> = -3 + CENTERING_X</td></tr>
-<tr class="separator:a69e9efb15f1b9a949d1ba82bcbdae7e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a01db5f4d595c34cec8b7f601519babc1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceplayer.html#a01db5f4d595c34cec8b7f601519babc1">player.PLAYER_BBOX_Y</a> = -34 + CENTERING_Y</td></tr>
-<tr class="separator:a01db5f4d595c34cec8b7f601519babc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af7a374353d5f81d59f36135fd43f3584"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceplayer.html#af7a374353d5f81d59f36135fd43f3584">player.PLAYER_BBOX_W</a> = 24</td></tr>
 <tr class="separator:af7a374353d5f81d59f36135fd43f3584"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a514f2a4212e45f711e14669a31d4a206"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceplayer.html#a514f2a4212e45f711e14669a31d4a206">player.PLAYER_BBOX_H</a> = 24</td></tr>
 <tr class="separator:a514f2a4212e45f711e14669a31d4a206"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a253e3a09412447a2d98c1cc3e32837c6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceplayer.html#a253e3a09412447a2d98c1cc3e32837c6">player.PLAYER_SPR_X</a> = -15 + CENTERING_X</td></tr>
-<tr class="separator:a253e3a09412447a2d98c1cc3e32837c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07a9a82d546413590c014e53ca90eb7c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceplayer.html#a07a9a82d546413590c014e53ca90eb7c">player.PLAYER_SPR_Y</a> = -50 + CENTERING_Y</td></tr>
-<tr class="separator:a07a9a82d546413590c014e53ca90eb7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69e9efb15f1b9a949d1ba82bcbdae7e4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceplayer.html#a69e9efb15f1b9a949d1ba82bcbdae7e4">player.PLAYER_BBOX_X</a> = int(-PLAYER_BBOX_W/2)</td></tr>
+<tr class="separator:a69e9efb15f1b9a949d1ba82bcbdae7e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01db5f4d595c34cec8b7f601519babc1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceplayer.html#a01db5f4d595c34cec8b7f601519babc1">player.PLAYER_BBOX_Y</a> = int(-PLAYER_BBOX_H/2)</td></tr>
+<tr class="separator:a01db5f4d595c34cec8b7f601519babc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21d0a214fc3499120db88d29cb1b7168"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceplayer.html#a21d0a214fc3499120db88d29cb1b7168">player.PLAYER_SPR_W</a> = 48</td></tr>
 <tr class="separator:a21d0a214fc3499120db88d29cb1b7168"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac29c97daf74e8172ea3a094f3fb75f7a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceplayer.html#ac29c97daf74e8172ea3a094f3fb75f7a">player.PLAYER_SPR_H</a> = 48</td></tr>
 <tr class="separator:ac29c97daf74e8172ea3a094f3fb75f7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a253e3a09412447a2d98c1cc3e32837c6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceplayer.html#a253e3a09412447a2d98c1cc3e32837c6">player.PLAYER_SPR_X</a> = int(-PLAYER_SPR_W/2)</td></tr>
+<tr class="separator:a253e3a09412447a2d98c1cc3e32837c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07a9a82d546413590c014e53ca90eb7c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceplayer.html#a07a9a82d546413590c014e53ca90eb7c">player.PLAYER_SPR_Y</a> = int(-PLAYER_SPR_H/2)</td></tr>
+<tr class="separator:a07a9a82d546413590c014e53ca90eb7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b14bad76cc6a54c9b9c17ec265efcec"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceplayer.html#a9b14bad76cc6a54c9b9c17ec265efcec">player.PLAYER_MOVE_SPD</a> = 4</td></tr>
 <tr class="separator:a9b14bad76cc6a54c9b9c17ec265efcec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4458b612eb93874cf1232077e5362d6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceplayer.html#ad4458b612eb93874cf1232077e5362d6">player.PLAYER_ROTATION_SPD</a> = 5</td></tr>
@@ -143,13 +140,12 @@ Variables</h2></td></tr>
 <tr class="separator:a347937a0918ee67477fe0583e61f3a4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4bcccc39e70b1c66c35d1b8ce9445805"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceplayer.html#a4bcccc39e70b1c66c35d1b8ce9445805">player.TILE_SIZE</a> = 32</td></tr>
 <tr class="separator:a4bcccc39e70b1c66c35d1b8ce9445805"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0dbc168b7a59af6aad8608780ec3d1a2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceplayer.html#a0dbc168b7a59af6aad8608780ec3d1a2">player.MAP_W</a> = 780</td></tr>
+<tr class="memitem:a0dbc168b7a59af6aad8608780ec3d1a2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceplayer.html#a0dbc168b7a59af6aad8608780ec3d1a2">player.MAP_W</a> = 784</td></tr>
 <tr class="separator:a0dbc168b7a59af6aad8608780ec3d1a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae7134b176d62ad3c0b45b2bdbd9415f3"><td class="memItemLeft" align="right" valign="top">list&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceplayer.html#ae7134b176d62ad3c0b45b2bdbd9415f3">player.solid_tiles</a> = [0, 1, 2, 6, 7, 8, 9, 10, 14, 15, 16, 17, 18]</td></tr>
+<tr class="memitem:ae7134b176d62ad3c0b45b2bdbd9415f3"><td class="memItemLeft" align="right" valign="top">list&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceplayer.html#ae7134b176d62ad3c0b45b2bdbd9415f3">player.solid_tiles</a> = [0, 1, 2, 3, 4, 5, 6, 7, 15, 16, 17, 18, 19, 20, 21, 22, 23, 31, 32, 33, 34, 35]</td></tr>
 <tr class="separator:ae7134b176d62ad3c0b45b2bdbd9415f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d593c7013b7b4aeac50bdb60942ad78"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceplayer.html#a8d593c7013b7b4aeac50bdb60942ad78">player.WIN_TILE</a> = 22</td></tr>
-<tr class="separator:a8d593c7013b7b4aeac50bdb60942ad78"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a56ef4ac25a2dbe32fb2d58bd4efe9b70"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceplayer.html#a56ef4ac25a2dbe32fb2d58bd4efe9b70">player.PLAYER_BULLET_DMG</a> = 1</td></tr>
+<tr class="memdesc:a56ef4ac25a2dbe32fb2d58bd4efe9b70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bullet damage player shoots.  <br /></td></tr>
 <tr class="separator:a56ef4ac25a2dbe32fb2d58bd4efe9b70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->

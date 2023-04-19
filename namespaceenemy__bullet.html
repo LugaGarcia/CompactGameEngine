@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Compact Game Engine: enemy_bullet Namespace Reference</title>
+<title>Nebula Game Engine: enemy_bullet Namespace Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,9 +26,9 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="EngineIcon.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">Compact Game Engine<span id="projectnumber">&#160;1.08</span>
+   <div id="projectname">Nebula Game Engine<span id="projectnumber">&#160;1.14</span>
    </div>
-   <div id="projectbrief">A small game engine with GUI compatability, by Safi Azam Hyun Joon Kim, Tanner Badey, and Luis Garcia</div>
+   <div id="projectbrief">A small game engine for 2D shooters with audio, by Safi Azam Hyun Joon Kim, Tanner Badey, and Luis Garcia</div>
   </td>
  </tr>
  </tbody>
@@ -106,18 +106,23 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a9e7fbab496b92129d52dfcf16c25e150"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceenemy__bullet.html#a9e7fbab496b92129d52dfcf16c25e150">EN_BULLET_SPR_X</a> = 8</td></tr>
-<tr class="separator:a9e7fbab496b92129d52dfcf16c25e150"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3428bf40bd5bdcdaa8f3976e4d4ffb13"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceenemy__bullet.html#a3428bf40bd5bdcdaa8f3976e4d4ffb13">EN_BULLET_SPR_Y</a> = 8</td></tr>
-<tr class="separator:a3428bf40bd5bdcdaa8f3976e4d4ffb13"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab007548786e49a1f2f4ad460d2861314"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceenemy__bullet.html#ab007548786e49a1f2f4ad460d2861314">EN_BULLET_BBOX_X</a> = 0</td></tr>
-<tr class="separator:ab007548786e49a1f2f4ad460d2861314"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a236ba64d8474cb46ea8eb7a3e081cf14"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceenemy__bullet.html#a236ba64d8474cb46ea8eb7a3e081cf14">EN_BULLET_BBOX_Y</a> = 0</td></tr>
-<tr class="separator:a236ba64d8474cb46ea8eb7a3e081cf14"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a96a37455fc4e32e7a6fef6ee0f26a2cc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceenemy__bullet.html#a96a37455fc4e32e7a6fef6ee0f26a2cc">EN_BULLET_BBOX_W</a> = 8</td></tr>
+<tr class="memitem:a96a37455fc4e32e7a6fef6ee0f26a2cc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceenemy__bullet.html#a96a37455fc4e32e7a6fef6ee0f26a2cc">EN_BULLET_BBOX_W</a> = 4</td></tr>
+<tr class="memdesc:a96a37455fc4e32e7a6fef6ee0f26a2cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enemies bullets defined.  <br /></td></tr>
 <tr class="separator:a96a37455fc4e32e7a6fef6ee0f26a2cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a25541f3cd2ddeccdcd4fa8ca423e70bb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceenemy__bullet.html#a25541f3cd2ddeccdcd4fa8ca423e70bb">EN_BULLET_BBOX_H</a> = 8</td></tr>
+<tr class="memitem:a25541f3cd2ddeccdcd4fa8ca423e70bb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceenemy__bullet.html#a25541f3cd2ddeccdcd4fa8ca423e70bb">EN_BULLET_BBOX_H</a> = 4</td></tr>
 <tr class="separator:a25541f3cd2ddeccdcd4fa8ca423e70bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab007548786e49a1f2f4ad460d2861314"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceenemy__bullet.html#ab007548786e49a1f2f4ad460d2861314">EN_BULLET_BBOX_X</a> = int(-<a class="el" href="namespaceenemy__bullet.html#a96a37455fc4e32e7a6fef6ee0f26a2cc">EN_BULLET_BBOX_W</a>/2)</td></tr>
+<tr class="separator:ab007548786e49a1f2f4ad460d2861314"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a236ba64d8474cb46ea8eb7a3e081cf14"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceenemy__bullet.html#a236ba64d8474cb46ea8eb7a3e081cf14">EN_BULLET_BBOX_Y</a> = int(-<a class="el" href="namespaceenemy__bullet.html#a25541f3cd2ddeccdcd4fa8ca423e70bb">EN_BULLET_BBOX_H</a>/2)</td></tr>
+<tr class="separator:a236ba64d8474cb46ea8eb7a3e081cf14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a120d7fb324a7b67c12a3a6ec91484c93"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceenemy__bullet.html#a120d7fb324a7b67c12a3a6ec91484c93">EN_BULLET_SPR_W</a> = 8</td></tr>
+<tr class="separator:a120d7fb324a7b67c12a3a6ec91484c93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cc30aaaec37ef0530a3c4c57f23dc55"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceenemy__bullet.html#a3cc30aaaec37ef0530a3c4c57f23dc55">EN_BULLET_SPR_H</a> = 8</td></tr>
+<tr class="separator:a3cc30aaaec37ef0530a3c4c57f23dc55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e7fbab496b92129d52dfcf16c25e150"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceenemy__bullet.html#a9e7fbab496b92129d52dfcf16c25e150">EN_BULLET_SPR_X</a> = int(-<a class="el" href="namespaceenemy__bullet.html#a120d7fb324a7b67c12a3a6ec91484c93">EN_BULLET_SPR_W</a>/2)</td></tr>
+<tr class="separator:a9e7fbab496b92129d52dfcf16c25e150"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3428bf40bd5bdcdaa8f3976e4d4ffb13"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceenemy__bullet.html#a3428bf40bd5bdcdaa8f3976e4d4ffb13">EN_BULLET_SPR_Y</a> = int(-<a class="el" href="namespaceenemy__bullet.html#a3cc30aaaec37ef0530a3c4c57f23dc55">EN_BULLET_SPR_H</a>/2)</td></tr>
+<tr class="separator:a3428bf40bd5bdcdaa8f3976e4d4ffb13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e6f731d38e3a31de79be51403d377c6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceenemy__bullet.html#a3e6f731d38e3a31de79be51403d377c6">BULLET_LIFETIME</a> = 100</td></tr>
 <tr class="separator:a3e6f731d38e3a31de79be51403d377c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -134,7 +139,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="enemy__bullet_8py_source.html#l00009">9</a> of file <a class="el" href="enemy__bullet_8py_source.html">enemy_bullet.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="enemy__bullet_8py_source.html#l00014">14</a> of file <a class="el" href="enemy__bullet_8py_source.html">enemy_bullet.py</a>.</p>
 
 </div>
 </div>
@@ -145,12 +150,12 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int enemy_bullet.EN_BULLET_BBOX_H = 8</td>
+          <td class="memname">int enemy_bullet.EN_BULLET_BBOX_H = 4</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="enemy__bullet_8py_source.html#l00007">7</a> of file <a class="el" href="enemy__bullet_8py_source.html">enemy_bullet.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="enemy__bullet_8py_source.html#l00004">4</a> of file <a class="el" href="enemy__bullet_8py_source.html">enemy_bullet.py</a>.</p>
 
 </div>
 </div>
@@ -161,12 +166,14 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int enemy_bullet.EN_BULLET_BBOX_W = 8</td>
+          <td class="memname">int enemy_bullet.EN_BULLET_BBOX_W = 4</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="enemy__bullet_8py_source.html#l00006">6</a> of file <a class="el" href="enemy__bullet_8py_source.html">enemy_bullet.py</a>.</p>
+<p>Enemies bullets defined. </p>
+
+<p class="definition">Definition at line <a class="el" href="enemy__bullet_8py_source.html#l00003">3</a> of file <a class="el" href="enemy__bullet_8py_source.html">enemy_bullet.py</a>.</p>
 
 </div>
 </div>
@@ -177,12 +184,12 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int enemy_bullet.EN_BULLET_BBOX_X = 0</td>
+          <td class="memname">int enemy_bullet.EN_BULLET_BBOX_X = int(-<a class="el" href="namespaceenemy__bullet.html#a96a37455fc4e32e7a6fef6ee0f26a2cc">EN_BULLET_BBOX_W</a>/2)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="enemy__bullet_8py_source.html#l00004">4</a> of file <a class="el" href="enemy__bullet_8py_source.html">enemy_bullet.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="enemy__bullet_8py_source.html#l00005">5</a> of file <a class="el" href="enemy__bullet_8py_source.html">enemy_bullet.py</a>.</p>
 
 </div>
 </div>
@@ -193,12 +200,44 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int enemy_bullet.EN_BULLET_BBOX_Y = 0</td>
+          <td class="memname">int enemy_bullet.EN_BULLET_BBOX_Y = int(-<a class="el" href="namespaceenemy__bullet.html#a25541f3cd2ddeccdcd4fa8ca423e70bb">EN_BULLET_BBOX_H</a>/2)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="enemy__bullet_8py_source.html#l00005">5</a> of file <a class="el" href="enemy__bullet_8py_source.html">enemy_bullet.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="enemy__bullet_8py_source.html#l00006">6</a> of file <a class="el" href="enemy__bullet_8py_source.html">enemy_bullet.py</a>.</p>
+
+</div>
+</div>
+<a id="a3cc30aaaec37ef0530a3c4c57f23dc55" name="a3cc30aaaec37ef0530a3c4c57f23dc55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3cc30aaaec37ef0530a3c4c57f23dc55">&#9670;&#160;</a></span>EN_BULLET_SPR_H</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int enemy_bullet.EN_BULLET_SPR_H = 8</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="enemy__bullet_8py_source.html#l00009">9</a> of file <a class="el" href="enemy__bullet_8py_source.html">enemy_bullet.py</a>.</p>
+
+</div>
+</div>
+<a id="a120d7fb324a7b67c12a3a6ec91484c93" name="a120d7fb324a7b67c12a3a6ec91484c93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a120d7fb324a7b67c12a3a6ec91484c93">&#9670;&#160;</a></span>EN_BULLET_SPR_W</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int enemy_bullet.EN_BULLET_SPR_W = 8</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="enemy__bullet_8py_source.html#l00008">8</a> of file <a class="el" href="enemy__bullet_8py_source.html">enemy_bullet.py</a>.</p>
 
 </div>
 </div>
@@ -209,12 +248,12 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int enemy_bullet.EN_BULLET_SPR_X = 8</td>
+          <td class="memname">int enemy_bullet.EN_BULLET_SPR_X = int(-<a class="el" href="namespaceenemy__bullet.html#a120d7fb324a7b67c12a3a6ec91484c93">EN_BULLET_SPR_W</a>/2)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="enemy__bullet_8py_source.html#l00002">2</a> of file <a class="el" href="enemy__bullet_8py_source.html">enemy_bullet.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="enemy__bullet_8py_source.html#l00010">10</a> of file <a class="el" href="enemy__bullet_8py_source.html">enemy_bullet.py</a>.</p>
 
 </div>
 </div>
@@ -225,12 +264,12 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int enemy_bullet.EN_BULLET_SPR_Y = 8</td>
+          <td class="memname">int enemy_bullet.EN_BULLET_SPR_Y = int(-<a class="el" href="namespaceenemy__bullet.html#a3cc30aaaec37ef0530a3c4c57f23dc55">EN_BULLET_SPR_H</a>/2)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="enemy__bullet_8py_source.html#l00003">3</a> of file <a class="el" href="enemy__bullet_8py_source.html">enemy_bullet.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="enemy__bullet_8py_source.html#l00011">11</a> of file <a class="el" href="enemy__bullet_8py_source.html">enemy_bullet.py</a>.</p>
 
 </div>
 </div>

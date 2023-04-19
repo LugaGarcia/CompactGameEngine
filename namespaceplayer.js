@@ -2,8 +2,6 @@ var namespaceplayer =
 [
     [ "Player", "classplayer_1_1_player.html", "classplayer_1_1_player" ],
     [ "BUL_SPD", "namespaceplayer.html#a347937a0918ee67477fe0583e61f3a4b", null ],
-    [ "CENTERING_X", "namespaceplayer.html#aacaebc767a23386c2543ea2e59a21760", null ],
-    [ "CENTERING_Y", "namespaceplayer.html#a5bd806af51dfc563af15dadf4fc6bd68", null ],
     [ "MAP_W", "namespaceplayer.html#a0dbc168b7a59af6aad8608780ec3d1a2", null ],
     [ "PLAYER_BBOX_H", "namespaceplayer.html#a514f2a4212e45f711e14669a31d4a206", null ],
     [ "PLAYER_BBOX_W", "namespaceplayer.html#af7a374353d5f81d59f36135fd43f3584", null ],
@@ -18,6 +16,5 @@ var namespaceplayer =
     [ "PLAYER_SPR_Y", "namespaceplayer.html#a07a9a82d546413590c014e53ca90eb7c", null ],
     [ "SHOOT_TIME", "namespaceplayer.html#a78ee76234c189d4157ea08c3e22119ee", null ],
     [ "solid_tiles", "namespaceplayer.html#ae7134b176d62ad3c0b45b2bdbd9415f3", null ],
-    [ "TILE_SIZE", "namespaceplayer.html#a4bcccc39e70b1c66c35d1b8ce9445805", null ],
-    [ "WIN_TILE", "namespaceplayer.html#a8d593c7013b7b4aeac50bdb60942ad78", null ]
+    [ "TILE_SIZE", "namespaceplayer.html#a4bcccc39e70b1c66c35d1b8ce9445805", null ]
 ];
