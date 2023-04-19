@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Compact Game Engine: player.Player Class Reference</title>
+<title>Nebula Game Engine: player.Player Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,9 +26,9 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="EngineIcon.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">Compact Game Engine<span id="projectnumber">&#160;1.08</span>
+   <div id="projectname">Nebula Game Engine<span id="projectnumber">&#160;1.14</span>
    </div>
-   <div id="projectbrief">A small game engine with GUI compatability, by Safi Azam Hyun Joon Kim, Tanner Badey, and Luis Garcia</div>
+   <div id="projectbrief">A small game engine for 2D shooters with audio, by Safi Azam Hyun Joon Kim, Tanner Badey, and Luis Garcia</div>
   </td>
  </tr>
  </tbody>
@@ -98,6 +98,9 @@ $(document).ready(function(){initNavTree('classplayer_1_1_player.html',''); init
   <div class="headertitle"><div class="title">player.Player Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Class consisting of locatxion, score, level, shooting timer.  
+ <a href="classplayer_1_1_player.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -105,20 +108,31 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a52434c87f8baf931655ff9811c57f288"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af98c87dd3559fba3f90fdaabfb632bc4"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplayer_1_1_player.html#af98c87dd3559fba3f90fdaabfb632bc4">update</a> (self)</td></tr>
 <tr class="separator:af98c87dd3559fba3f90fdaabfb632bc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6716dcd6beada2048b7ddd7a7ac8610"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplayer_1_1_player.html#ad6716dcd6beada2048b7ddd7a7ac8610">damage</a> (self, <a class="el" href="classplayer_1_1_player.html#a4ff49afe255def11e2a869f23c910545">dmg</a>)</td></tr>
+<tr class="memdesc:ad6716dcd6beada2048b7ddd7a7ac8610"><td class="mdescLeft">&#160;</td><td class="mdescRight">Damages player's health point by the given value.  <br /></td></tr>
+<tr class="separator:ad6716dcd6beada2048b7ddd7a7ac8610"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3ed9351b254c36982fc2b6877df2e7e"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplayer_1_1_player.html#ae3ed9351b254c36982fc2b6877df2e7e">destroy</a> (self)</td></tr>
+<tr class="memdesc:ae3ed9351b254c36982fc2b6877df2e7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys the gameobject itself.  <br /></td></tr>
 <tr class="separator:ae3ed9351b254c36982fc2b6877df2e7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b07633fbdf8a555cb008b9fea54779f"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplayer_1_1_player.html#a3b07633fbdf8a555cb008b9fea54779f">receiveBuff</a> (self, buff, amount)</td></tr>
-<tr class="separator:a3b07633fbdf8a555cb008b9fea54779f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0397e1ed3d485233319bfcf15aedfae9"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplayer_1_1_player.html#a0397e1ed3d485233319bfcf15aedfae9">addScore</a> (self)</td></tr>
+<tr class="separator:a0397e1ed3d485233319bfcf15aedfae9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:ac76a0e872e988e1ec9dd082061af3de4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplayer_1_1_player.html#ac76a0e872e988e1ec9dd082061af3de4">vx</a></td></tr>
+<tr class="memdesc:ac76a0e872e988e1ec9dd082061af3de4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotates the player based on keyboard input.  <br /></td></tr>
 <tr class="separator:ac76a0e872e988e1ec9dd082061af3de4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:accfc40523c4e2fc71eaae8a8f67c46fa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplayer_1_1_player.html#accfc40523c4e2fc71eaae8a8f67c46fa">vy</a></td></tr>
+<tr class="memdesc:accfc40523c4e2fc71eaae8a8f67c46fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Y-Direction.  <br /></td></tr>
 <tr class="separator:accfc40523c4e2fc71eaae8a8f67c46fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6dca9d4e3fdcf731b75120e48cd5f578"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplayer_1_1_player.html#a6dca9d4e3fdcf731b75120e48cd5f578">hp</a></td></tr>
+<tr class="separator:a6dca9d4e3fdcf731b75120e48cd5f578"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2932c74e0e408ec3ae24515ca7f21370"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplayer_1_1_player.html#a2932c74e0e408ec3ae24515ca7f21370">score</a></td></tr>
 <tr class="separator:a2932c74e0e408ec3ae24515ca7f21370"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81b9a4e4d4dc54bcc021aae33d22c001"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplayer_1_1_player.html#a81b9a4e4d4dc54bcc021aae33d22c001">level</a></td></tr>
+<tr class="separator:a81b9a4e4d4dc54bcc021aae33d22c001"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a24d1c700f5d00d99e86accf0f9e172e4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplayer_1_1_player.html#a24d1c700f5d00d99e86accf0f9e172e4">shoot_timer</a></td></tr>
+<tr class="memdesc:a24d1c700f5d00d99e86accf0f9e172e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the player's position based on their velocity.  <br /></td></tr>
 <tr class="separator:a24d1c700f5d00d99e86accf0f9e172e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37b66a58d3c062ff1c0b131bb017f789"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplayer_1_1_player.html#a37b66a58d3c062ff1c0b131bb017f789">obj</a></td></tr>
 <tr class="separator:a37b66a58d3c062ff1c0b131bb017f789"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -126,8 +140,9 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a4ff49afe255def11e2a869f23c910545"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="player_8py_source.html#l00029">29</a> of file <a class="el" href="player_8py_source.html">player.py</a>.</p>
+<div class="textblock"><p>Class consisting of locatxion, score, level, shooting timer. </p>
+
+<p class="definition">Definition at line <a class="el" href="player_8py_source.html#l00028">28</a> of file <a class="el" href="player_8py_source.html">player.py</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a52434c87f8baf931655ff9811c57f288" name="a52434c87f8baf931655ff9811c57f288"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a52434c87f8baf931655ff9811c57f288">&#9670;&#160;</a></span>__init__()</h2>
@@ -161,11 +176,63 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="player_8py_source.html#l00030">30</a> of file <a class="el" href="player_8py_source.html">player.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="player_8py_source.html#l00029">29</a> of file <a class="el" href="player_8py_source.html">player.py</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a0397e1ed3d485233319bfcf15aedfae9" name="a0397e1ed3d485233319bfcf15aedfae9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0397e1ed3d485233319bfcf15aedfae9">&#9670;&#160;</a></span>addScore()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def player.Player.addScore </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="player_8py_source.html#l00144">144</a> of file <a class="el" href="player_8py_source.html">player.py</a>.</p>
+
+</div>
+</div>
+<a id="ad6716dcd6beada2048b7ddd7a7ac8610" name="ad6716dcd6beada2048b7ddd7a7ac8610"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6716dcd6beada2048b7ddd7a7ac8610">&#9670;&#160;</a></span>damage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def player.Player.damage </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>dmg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Damages player's health point by the given value. </p>
+
+<p class="definition">Definition at line <a class="el" href="player_8py_source.html#l00133">133</a> of file <a class="el" href="player_8py_source.html">player.py</a>.</p>
+
+</div>
+</div>
 <a id="ae3ed9351b254c36982fc2b6877df2e7e" name="ae3ed9351b254c36982fc2b6877df2e7e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae3ed9351b254c36982fc2b6877df2e7e">&#9670;&#160;</a></span>destroy()</h2>
 
@@ -182,43 +249,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="player_8py_source.html#l00155">155</a> of file <a class="el" href="player_8py_source.html">player.py</a>.</p>
+<p>Destroys the gameobject itself. </p>
 
-</div>
-</div>
-<a id="a3b07633fbdf8a555cb008b9fea54779f" name="a3b07633fbdf8a555cb008b9fea54779f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3b07633fbdf8a555cb008b9fea54779f">&#9670;&#160;</a></span>receiveBuff()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">def player.Player.receiveBuff </td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>self</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>buff</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>amount</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="player_8py_source.html#l00159">159</a> of file <a class="el" href="player_8py_source.html">player.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="player_8py_source.html#l00137">137</a> of file <a class="el" href="player_8py_source.html">player.py</a>.</p>
 
 </div>
 </div>
@@ -238,7 +271,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="player_8py_source.html#l00042">42</a> of file <a class="el" href="player_8py_source.html">player.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="player_8py_source.html#l00043">43</a> of file <a class="el" href="player_8py_source.html">player.py</a>.</p>
 
 </div>
 </div>
@@ -255,7 +288,39 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="player_8py_source.html#l00039">39</a> of file <a class="el" href="player_8py_source.html">player.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="player_8py_source.html#l00040">40</a> of file <a class="el" href="player_8py_source.html">player.py</a>.</p>
+
+</div>
+</div>
+<a id="a6dca9d4e3fdcf731b75120e48cd5f578" name="a6dca9d4e3fdcf731b75120e48cd5f578"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6dca9d4e3fdcf731b75120e48cd5f578">&#9670;&#160;</a></span>hp</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">player.Player.hp</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="player_8py_source.html#l00032">32</a> of file <a class="el" href="player_8py_source.html">player.py</a>.</p>
+
+</div>
+</div>
+<a id="a81b9a4e4d4dc54bcc021aae33d22c001" name="a81b9a4e4d4dc54bcc021aae33d22c001"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81b9a4e4d4dc54bcc021aae33d22c001">&#9670;&#160;</a></span>level</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">player.Player.level</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="player_8py_source.html#l00034">34</a> of file <a class="el" href="player_8py_source.html">player.py</a>.</p>
 
 </div>
 </div>
@@ -271,7 +336,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="player_8py_source.html#l00035">35</a> of file <a class="el" href="player_8py_source.html">player.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="player_8py_source.html#l00036">36</a> of file <a class="el" href="player_8py_source.html">player.py</a>.</p>
 
 </div>
 </div>
@@ -303,7 +368,10 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="player_8py_source.html#l00034">34</a> of file <a class="el" href="player_8py_source.html">player.py</a>.</p>
+<p>Update the player's position based on their velocity. </p>
+<p>Handle player shooting </p>
+
+<p class="definition">Definition at line <a class="el" href="player_8py_source.html#l00035">35</a> of file <a class="el" href="player_8py_source.html">player.py</a>.</p>
 
 </div>
 </div>
@@ -319,7 +387,12 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="player_8py_source.html#l00031">31</a> of file <a class="el" href="player_8py_source.html">player.py</a>.</p>
+<p>Rotates the player based on keyboard input. </p>
+<p>Check for if the player is attempting to move into a solid tile and prevent said movement X-Direction.</p>
+<p>Get the x and y speeds relative to player rotation</p>
+<p>If the player is pressing the up key, move in the direction they're facing </p>
+
+<p class="definition">Definition at line <a class="el" href="player_8py_source.html#l00030">30</a> of file <a class="el" href="player_8py_source.html">player.py</a>.</p>
 
 </div>
 </div>
@@ -335,7 +408,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="player_8py_source.html#l00032">32</a> of file <a class="el" href="player_8py_source.html">player.py</a>.</p>
+<p>Y-Direction. </p>
+
+<p class="definition">Definition at line <a class="el" href="player_8py_source.html#l00031">31</a> of file <a class="el" href="player_8py_source.html">player.py</a>.</p>
 
 </div>
 </div>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Compact Game Engine: ResourceManager Class Reference</title>
+<title>Nebula Game Engine: ResourceManager Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,9 +26,9 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="EngineIcon.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">Compact Game Engine<span id="projectnumber">&#160;1.08</span>
+   <div id="projectname">Nebula Game Engine<span id="projectnumber">&#160;1.14</span>
    </div>
-   <div id="projectbrief">A small game engine with GUI compatability, by Safi Azam Hyun Joon Kim, Tanner Badey, and Luis Garcia</div>
+   <div id="projectbrief">A small game engine for 2D shooters with audio, by Safi Azam Hyun Joon Kim, Tanner Badey, and Luis Garcia</div>
   </td>
  </tr>
  </tbody>
@@ -99,7 +99,7 @@ $(document).ready(function(){initNavTree('class_resource_manager.html',''); init
 </div><!--header-->
 <div class="contents">
 
-<p>I recommend a map for filling in the resource manager.  
+<p><a class="el" href="class_resource_manager.html" title="ResourceManager Header. Overview.">ResourceManager</a> Header. Overview.  
  <a href="class_resource_manager.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_resource_manager_8hpp_source.html">ResourceManager.hpp</a>&gt;</code></p>
@@ -131,10 +131,10 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a91756683167c290b33b7525881122940"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>I recommend a map for filling in the resource manager. </p>
-<p>Our resource Manager This resourcce manager has its solo instance and is able to load a "surface", textures, sounds, along with being able to destory them </p>
+<div class="textblock"><p><a class="el" href="class_resource_manager.html" title="ResourceManager Header. Overview.">ResourceManager</a> Header. Overview. </p>
+<p>I recommend a map for filling in the resource manager Our resource Manager This resourcce manager has its solo instance and is able to load a "surface", textures, sounds, along with being able to destory them </p>
 
-<p class="definition">Definition at line <a class="el" href="_resource_manager_8hpp_source.html#l00020">20</a> of file <a class="el" href="_resource_manager_8hpp_source.html">ResourceManager.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_resource_manager_8hpp_source.html#l00021">21</a> of file <a class="el" href="_resource_manager_8hpp_source.html">ResourceManager.hpp</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="aa213d300f531e6ee1b3f108d09bbf5d3" name="aa213d300f531e6ee1b3f108d09bbf5d3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa213d300f531e6ee1b3f108d09bbf5d3">&#9670;&#160;</a></span>DestroySound()</h2>
@@ -231,6 +231,7 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>std::cout &lt;&lt; "Retrieved saved copy of " &lt;&lt; image_filename &lt;&lt; " from GetSurface\n";</p>
 
 <p class="definition">Definition at line <a class="el" href="_resource_manager_8cpp_source.html#l00050">50</a> of file <a class="el" href="_resource_manager_8cpp_source.html">ResourceManager.cpp</a>.</p>
 
@@ -261,6 +262,7 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>std::cout &lt;&lt; "Retrieved saved copy of " &lt;&lt; image_filename &lt;&lt; " from GetTexture\n";</p>
 
 <p class="definition">Definition at line <a class="el" href="_resource_manager_8cpp_source.html#l00057">57</a> of file <a class="el" href="_resource_manager_8cpp_source.html">ResourceManager.cpp</a>.</p>
 
@@ -328,6 +330,8 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>std::cout &lt;&lt; "New surface of " &lt;&lt; image_filename &lt;&lt; " has been loaded\n";</p>
+<p>else std::cout &lt;&lt; "SDL_LoadBMP allocated\n";</p>
 
 <p class="definition">Definition at line <a class="el" href="_resource_manager_8cpp_source.html#l00014">14</a> of file <a class="el" href="_resource_manager_8cpp_source.html">ResourceManager.cpp</a>.</p>
 
@@ -358,6 +362,8 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>std::cout &lt;&lt; "New texture of " &lt;&lt; image_filename &lt;&lt; " has been loaded\n";</p>
+<p>else std::cout &lt;&lt; "SDL_Texture allocated\n";</p>
 
 <p class="definition">Definition at line <a class="el" href="_resource_manager_8cpp_source.html#l00028">28</a> of file <a class="el" href="_resource_manager_8cpp_source.html">ResourceManager.cpp</a>.</p>
 

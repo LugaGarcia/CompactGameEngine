@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Compact Game Engine: Engine/src/ResourceManager.cpp Source File</title>
+<title>Nebula Game Engine: Engine/src/ResourceManager.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,9 +26,9 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="EngineIcon.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">Compact Game Engine<span id="projectnumber">&#160;1.08</span>
+   <div id="projectname">Nebula Game Engine<span id="projectnumber">&#160;1.14</span>
    </div>
-   <div id="projectbrief">A small game engine with GUI compatability, by Safi Azam Hyun Joon Kim, Tanner Badey, and Luis Garcia</div>
+   <div id="projectbrief">A small game engine for 2D shooters with audio, by Safi Azam Hyun Joon Kim, Tanner Badey, and Luis Garcia</div>
   </td>
  </tr>
  </tbody>
@@ -94,7 +94,7 @@ $(document).ready(function(){initNavTree('_resource_manager_8cpp_source.html',''
   <div class="headertitle"><div class="title">ResourceManager.cpp</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="_resource_manager_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// I recommend an unordered_map for filling in the resource manager</span></div>
+<a href="_resource_manager_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;<a class="code" href="_resource_manager_8hpp.html">ResourceManager.hpp</a>&quot;</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;iterator&gt;</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
@@ -110,26 +110,20 @@ $(document).ready(function(){initNavTree('_resource_manager_8cpp_source.html',''
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="class_resource_manager.html#a9a13bb31897e6bd810f1f01447d06eb3">   14</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_resource_manager.html#a9a13bb31897e6bd810f1f01447d06eb3">ResourceManager::LoadSurface</a>(std::string image_filename) {</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keywordflow">if</span> (mSurfaces.count(image_filename))</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="comment">//std::cout &lt;&lt; &quot;New surface of &quot; &lt;&lt; image_filename &lt;&lt; &quot; has been loaded\n&quot;;</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    SDL_Surface* surface = SDL_LoadBMP(image_filename.c_str());</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="comment">//red is our transparent color.</span></div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    SDL_SetColorKey(surface, SDL_TRUE, SDL_MapRGB(surface-&gt;format, 255, 0, 0));</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keywordflow">if</span>(surface == <span class="keyword">nullptr</span>)</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        std::cerr &lt;&lt; image_filename &lt;&lt; <span class="stringliteral">&quot; not found!\n&quot;</span>;</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="comment">//else</span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="comment">//    std::cout &lt;&lt; &quot;SDL_LoadBMP allocated\n&quot;;</span></div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    mSurfaces.insert({image_filename, surface});</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>}</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="class_resource_manager.html#a1c79b47e42e0049682f144ddd56fbea9">   28</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_resource_manager.html#a1c79b47e42e0049682f144ddd56fbea9">ResourceManager::LoadTexture</a>(SDL_Renderer* renderer, std::string image_filename) {</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keywordflow">if</span> (mTextures.count(image_filename))</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="comment">//std::cout &lt;&lt; &quot;New texture of &quot; &lt;&lt; image_filename &lt;&lt; &quot; has been loaded\n&quot;;</span></div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    SDL_Texture* <a class="code hl_typedef" href="glad_8h.html#ab21590c4736d1459a5a0674a42b5a655">texture</a> = SDL_CreateTextureFromSurface(renderer, <a class="code hl_function" href="class_resource_manager.html#a8a4f9cea6d73201b080c9bef73b744cc">GetSurface</a>(image_filename));</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keywordflow">if</span>(<a class="code hl_typedef" href="glad_8h.html#ab21590c4736d1459a5a0674a42b5a655">texture</a> == <span class="keyword">nullptr</span>)</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        std::cerr &lt;&lt; <span class="stringliteral">&quot;Error creating texture\n&quot;</span>;</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="comment">//else</span></div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="comment">//    std::cout &lt;&lt; &quot;SDL_Texture allocated\n&quot;;</span></div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    mTextures.insert({image_filename, <a class="code hl_typedef" href="glad_8h.html#ab21590c4736d1459a5a0674a42b5a655">texture</a>});</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>}</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
@@ -146,14 +140,12 @@ $(document).ready(function(){initNavTree('_resource_manager_8cpp_source.html',''
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="class_resource_manager.html#a8a4f9cea6d73201b080c9bef73b744cc">   50</a></span>SDL_Surface* <a class="code hl_function" href="class_resource_manager.html#a8a4f9cea6d73201b080c9bef73b744cc">ResourceManager::GetSurface</a>(std::string image_filename) {</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keywordflow">if</span> (!mSurfaces.count(image_filename))</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        <a class="code hl_function" href="class_resource_manager.html#a9a13bb31897e6bd810f1f01447d06eb3">LoadSurface</a>(image_filename);</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="comment">//std::cout &lt;&lt; &quot;Retrieved saved copy of &quot; &lt;&lt; image_filename &lt;&lt; &quot; from GetSurface\n&quot;;</span></div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keywordflow">return</span> mSurfaces[image_filename];</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>}</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="class_resource_manager.html#a0a29e9ac4c0fbcec6053eb3cfd28d0ad">   57</a></span>SDL_Texture* <a class="code hl_function" href="class_resource_manager.html#a0a29e9ac4c0fbcec6053eb3cfd28d0ad">ResourceManager::GetTexture</a>(SDL_Renderer* renderer, std::string image_filename) {</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keywordflow">if</span> (!mTextures.count(image_filename))</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        <a class="code hl_function" href="class_resource_manager.html#a1c79b47e42e0049682f144ddd56fbea9">LoadTexture</a>(renderer, image_filename);</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="comment">//std::cout &lt;&lt; &quot;Retrieved saved copy of &quot; &lt;&lt; image_filename &lt;&lt; &quot; from GetTexture\n&quot;;</span></div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keywordflow">return</span> mTextures[image_filename];</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>}</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
@@ -182,7 +174,7 @@ $(document).ready(function(){initNavTree('_resource_manager_8cpp_source.html',''
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <span class="keywordflow">return</span> mSounds[sound_filename];</div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>}</div>
 <div class="ttc" id="a_resource_manager_8hpp_html"><div class="ttname"><a href="_resource_manager_8hpp.html">ResourceManager.hpp</a></div></div>
-<div class="ttc" id="aclass_resource_manager_html"><div class="ttname"><a href="class_resource_manager.html">ResourceManager</a></div><div class="ttdoc">I recommend a map for filling in the resource manager.</div><div class="ttdef"><b>Definition:</b> <a href="_resource_manager_8hpp_source.html#l00020">ResourceManager.hpp:20</a></div></div>
+<div class="ttc" id="aclass_resource_manager_html"><div class="ttname"><a href="class_resource_manager.html">ResourceManager</a></div><div class="ttdoc">ResourceManager Header. Overview.</div><div class="ttdef"><b>Definition:</b> <a href="_resource_manager_8hpp_source.html#l00021">ResourceManager.hpp:21</a></div></div>
 <div class="ttc" id="aclass_resource_manager_html_a0a29e9ac4c0fbcec6053eb3cfd28d0ad"><div class="ttname"><a href="class_resource_manager.html#a0a29e9ac4c0fbcec6053eb3cfd28d0ad">ResourceManager::GetTexture</a></div><div class="ttdeci">SDL_Texture * GetTexture(SDL_Renderer *renderer, std::string key)</div><div class="ttdef"><b>Definition:</b> <a href="_resource_manager_8cpp_source.html#l00057">ResourceManager.cpp:57</a></div></div>
 <div class="ttc" id="aclass_resource_manager_html_a1c79b47e42e0049682f144ddd56fbea9"><div class="ttname"><a href="class_resource_manager.html#a1c79b47e42e0049682f144ddd56fbea9">ResourceManager::LoadTexture</a></div><div class="ttdeci">void LoadTexture(SDL_Renderer *renderer, std::string image_filename)</div><div class="ttdef"><b>Definition:</b> <a href="_resource_manager_8cpp_source.html#l00028">ResourceManager.cpp:28</a></div></div>
 <div class="ttc" id="aclass_resource_manager_html_a700bd3c5396db0a4b42298ff900a25e5"><div class="ttname"><a href="class_resource_manager.html#a700bd3c5396db0a4b42298ff900a25e5">ResourceManager::DestroySurface</a></div><div class="ttdeci">void DestroySurface(std::string image_filename)</div><div class="ttdef"><b>Definition:</b> <a href="_resource_manager_8cpp_source.html#l00040">ResourceManager.cpp:40</a></div></div>
@@ -193,7 +185,7 @@ $(document).ready(function(){initNavTree('_resource_manager_8cpp_source.html',''
 <div class="ttc" id="aclass_resource_manager_html_aa213d300f531e6ee1b3f108d09bbf5d3"><div class="ttname"><a href="class_resource_manager.html#aa213d300f531e6ee1b3f108d09bbf5d3">ResourceManager::DestroySound</a></div><div class="ttdeci">void DestroySound(std::string sound_filename)</div><div class="ttdef"><b>Definition:</b> <a href="_resource_manager_8cpp_source.html#l00077">ResourceManager.cpp:77</a></div></div>
 <div class="ttc" id="aclass_resource_manager_html_ac6061ae28a1179bc5c353bcc1e605ee2"><div class="ttname"><a href="class_resource_manager.html#ac6061ae28a1179bc5c353bcc1e605ee2">ResourceManager::GetSound</a></div><div class="ttdeci">Mix_Chunk * GetSound(std::string key)</div><div class="ttdef"><b>Definition:</b> <a href="_resource_manager_8cpp_source.html#l00082">ResourceManager.cpp:82</a></div></div>
 <div class="ttc" id="aclass_resource_manager_html_ade1d340200f74c470921e52df5be5408"><div class="ttname"><a href="class_resource_manager.html#ade1d340200f74c470921e52df5be5408">ResourceManager::LoadSound</a></div><div class="ttdeci">void LoadSound(std::string sound_filename)</div><div class="ttdef"><b>Definition:</b> <a href="_resource_manager_8cpp_source.html#l00064">ResourceManager.cpp:64</a></div></div>
-<div class="ttc" id="aglad_8h_html_ab21590c4736d1459a5a0674a42b5a655"><div class="ttname"><a href="glad_8h.html#ab21590c4736d1459a5a0674a42b5a655">texture</a></div><div class="ttdeci">GLuint texture</div><div class="ttdef"><b>Definition:</b> <a href="glad_8h_source.html#l02396">glad.h:2396</a></div></div>
+<div class="ttc" id="aglad_8h_html_ab21590c4736d1459a5a0674a42b5a655"><div class="ttname"><a href="glad_8h.html#ab21590c4736d1459a5a0674a42b5a655">texture</a></div><div class="ttdeci">GLuint texture</div><div class="ttdef"><b>Definition:</b> <a href="glad_8h_source.html#l02398">glad.h:2398</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Compact Game Engine: SDLGraphicsProgram Class Reference</title>
+<title>Nebula Game Engine: SDLGraphicsProgram Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,9 +26,9 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="EngineIcon.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">Compact Game Engine<span id="projectnumber">&#160;1.08</span>
+   <div id="projectname">Nebula Game Engine<span id="projectnumber">&#160;1.14</span>
    </div>
-   <div id="projectbrief">A small game engine with GUI compatability, by Safi Azam Hyun Joon Kim, Tanner Badey, and Luis Garcia</div>
+   <div id="projectbrief">A small game engine for 2D shooters with audio, by Safi Azam Hyun Joon Kim, Tanner Badey, and Luis Garcia</div>
   </td>
  </tr>
  </tbody>
@@ -99,39 +99,56 @@ $(document).ready(function(){initNavTree('class_s_d_l_graphics_program.html','')
 </div><!--header-->
 <div class="contents">
 
+<p>Basic Funcuinality with SDL HEADER.  
+ <a href="class_s_d_l_graphics_program.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_s_d_l_graphics_program_8hpp_source.html">SDLGraphicsProgram.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a976683178e086cd2a1a801fd9c501a7b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_d_l_graphics_program.html#a976683178e086cd2a1a801fd9c501a7b">SDLGraphicsProgram</a> (int <a class="el" href="glad_8h.html#a1d0296e9e835f2e1ee17634af95fc1ec">w</a>, int h)</td></tr>
+<tr class="memdesc:a976683178e086cd2a1a801fd9c501a7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <br /></td></tr>
 <tr class="separator:a976683178e086cd2a1a801fd9c501a7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2504412e7eaa011a1116447eb4d5ec00"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_d_l_graphics_program.html#a2504412e7eaa011a1116447eb4d5ec00">~SDLGraphicsProgram</a> ()</td></tr>
+<tr class="memdesc:a2504412e7eaa011a1116447eb4d5ec00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <br /></td></tr>
 <tr class="separator:a2504412e7eaa011a1116447eb4d5ec00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6cc65adc2dde4f2346839685c4e43ea9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_d_l_graphics_program.html#a6cc65adc2dde4f2346839685c4e43ea9">initGL</a> ()</td></tr>
+<tr class="memdesc:a6cc65adc2dde4f2346839685c4e43ea9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setup OpenGL.  <br /></td></tr>
 <tr class="separator:a6cc65adc2dde4f2346839685c4e43ea9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a56942edfd4c5f45334ba55adb2558d35"><td class="memItemLeft" align="right" valign="top"><a class="el" href="glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_d_l_graphics_program.html#a56942edfd4c5f45334ba55adb2558d35">clear</a> ()</td></tr>
+<tr class="memdesc:a56942edfd4c5f45334ba55adb2558d35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears the screen.  <br /></td></tr>
 <tr class="separator:a56942edfd4c5f45334ba55adb2558d35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b2040042b2fc4bda09f365d7885e9a3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_d_l_graphics_program.html#a1b2040042b2fc4bda09f365d7885e9a3">flip</a> ()</td></tr>
+<tr class="memdesc:a1b2040042b2fc4bda09f365d7885e9a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flips to new buffer.  <br /></td></tr>
 <tr class="separator:a1b2040042b2fc4bda09f365d7885e9a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a299c62853b3f28fc3930880fc4c128ba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_d_l_graphics_program.html#a299c62853b3f28fc3930880fc4c128ba">delay</a> (int milliseconds)</td></tr>
+<tr class="memdesc:a299c62853b3f28fc3930880fc4c128ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delay rendering.  <br /></td></tr>
 <tr class="separator:a299c62853b3f28fc3930880fc4c128ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a910e0b4f317e36d29623e6129ca21fac"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_d_l_graphics_program.html#a910e0b4f317e36d29623e6129ca21fac">loop</a> ()</td></tr>
+<tr class="memdesc:a910e0b4f317e36d29623e6129ca21fac"><td class="mdescLeft">&#160;</td><td class="mdescRight">loop that runs forever  <br /></td></tr>
 <tr class="separator:a910e0b4f317e36d29623e6129ca21fac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42e9554ec5b497551530bd5a8ca9585f"><td class="memItemLeft" align="right" valign="top">SDL_Window *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_d_l_graphics_program.html#a42e9554ec5b497551530bd5a8ca9585f">getSDLWindow</a> ()</td></tr>
+<tr class="memdesc:a42e9554ec5b497551530bd5a8ca9585f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get Pointer to Window.  <br /></td></tr>
 <tr class="separator:a42e9554ec5b497551530bd5a8ca9585f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2beed51ca911c6e44597a7ce53890053"><td class="memItemLeft" align="right" valign="top">SDL_Renderer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_d_l_graphics_program.html#a2beed51ca911c6e44597a7ce53890053">GetSDLRenderer</a> ()</td></tr>
+<tr class="memdesc:a2beed51ca911c6e44597a7ce53890053"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get Pointer to Renderer.  <br /></td></tr>
 <tr class="separator:a2beed51ca911c6e44597a7ce53890053"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d247c7dc69967b8222e4ea8392708fc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_d_l_graphics_program.html#a6d247c7dc69967b8222e4ea8392708fc">DrawRectangle</a> (int <a class="el" href="glad_8h.html#a92d0386e5c19fb81ea88c9f99644ab1d">x</a>, int <a class="el" href="glad_8h.html#a66ddd433d2cacfe27f5906b7e86faeed">y</a>, int <a class="el" href="glad_8h.html#a1d0296e9e835f2e1ee17634af95fc1ec">w</a>, int h, int <a class="el" href="glad_8h.html#abe08814c2f72843fde4d8df41440d5a0">r</a>, int <a class="el" href="glad_8h.html#a9cd653b1648845554169fbc3a3f6d37a">g</a>, int <a class="el" href="glad_8h.html#a6eba317e3cf44d6d26c04a5a8f197dcb">b</a>)</td></tr>
+<tr class="memdesc:a6d247c7dc69967b8222e4ea8392708fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw a simple rectangle.  <br /></td></tr>
 <tr class="separator:a6d247c7dc69967b8222e4ea8392708fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3e4137b792bc023198c7fb6ab774e5f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_d_l_graphics_program.html#af3e4137b792bc023198c7fb6ab774e5f">SetTilemap</a> (std::string tiles_sprite, int rows, int cols, int _TileWidth, int _TileHeight, int _mapX, int _mapY, const std::vector&lt; int &gt; &amp;l)</td></tr>
+<tr class="memdesc:af3e4137b792bc023198c7fb6ab774e5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the tilemap.  <br /></td></tr>
 <tr class="separator:af3e4137b792bc023198c7fb6ab774e5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a181ee1f3a771b7a528d5cecee982540c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_d_l_graphics_program.html#a181ee1f3a771b7a528d5cecee982540c">GetTilemapAtPixel</a> (float <a class="el" href="glad_8h.html#a92d0386e5c19fb81ea88c9f99644ab1d">x</a>, float <a class="el" href="glad_8h.html#a66ddd433d2cacfe27f5906b7e86faeed">y</a>)</td></tr>
 <tr class="separator:a181ee1f3a771b7a528d5cecee982540c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a12fde49fe39f982012f6b1ea3247b1df"><td class="memItemLeft" align="right" valign="top"><a class="el" href="glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_d_l_graphics_program.html#a12fde49fe39f982012f6b1ea3247b1df">AddObject</a> (<a class="el" href="class_game_object.html">GameObject</a> *obj)</td></tr>
+<tr class="memdesc:a12fde49fe39f982012f6b1ea3247b1df"><td class="mdescLeft">&#160;</td><td class="mdescRight">add an instantiated gameobject to the game scene.  <br /></td></tr>
 <tr class="separator:a12fde49fe39f982012f6b1ea3247b1df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2d1b803d18fb92437c0b4247d880711"><td class="memItemLeft" align="right" valign="top"><a class="el" href="glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_d_l_graphics_program.html#ae2d1b803d18fb92437c0b4247d880711">RemoveObject</a> (<a class="el" href="class_game_object.html">GameObject</a> *obj)</td></tr>
+<tr class="memdesc:ae2d1b803d18fb92437c0b4247d880711"><td class="mdescLeft">&#160;</td><td class="mdescRight">remove gameobject from scene and destroy it.  <br /></td></tr>
 <tr class="separator:ae2d1b803d18fb92437c0b4247d880711"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74253756a3081fc82b72bbad5bea0f38"><td class="memItemLeft" align="right" valign="top"><a class="el" href="glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_d_l_graphics_program.html#a74253756a3081fc82b72bbad5bea0f38">RemoveAllObjects</a> (<a class="el" href="class_game_object.html">GameObject</a> *obj)</td></tr>
+<tr class="memdesc:a74253756a3081fc82b72bbad5bea0f38"><td class="mdescLeft">&#160;</td><td class="mdescRight">remove all gameobjects from the scene except this one  <br /></td></tr>
 <tr class="separator:a74253756a3081fc82b72bbad5bea0f38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d773627d0b6a75642d79a3299c45501"><td class="memItemLeft" align="right" valign="top">py::object *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_d_l_graphics_program.html#a1d773627d0b6a75642d79a3299c45501">InstancePlace</a> (<a class="el" href="class_game_object.html">GameObject</a> *obj, std::string obj_name)</td></tr>
 <tr class="separator:a1d773627d0b6a75642d79a3299c45501"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -168,8 +185,10 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a0afbf1d056462b0f75ba1a966e583716"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_s_d_l_graphics_program_8hpp_source.html#l00039">39</a> of file <a class="el" href="_s_d_l_graphics_program_8hpp_source.html">SDLGraphicsProgram.hpp</a>.</p>
+<div class="textblock"><p>Basic Funcuinality with SDL HEADER. </p>
+<p>==================== Libraries ================== Depending on the operating system we use The paths to SDL are actually different. The #define statement should be passed in when compiling using the -D argument. This gives an example of how a programmer may support multiple platforms with different dependencies. This works for Mac The glad library helps setup OpenGL extensions. Include the pybindings Purpose: This class sets up a full graphics program using SDL </p>
+
+<p class="definition">Definition at line <a class="el" href="_s_d_l_graphics_program_8hpp_source.html#l00040">40</a> of file <a class="el" href="_s_d_l_graphics_program_8hpp_source.html">SDLGraphicsProgram.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a976683178e086cd2a1a801fd9c501a7b" name="a976683178e086cd2a1a801fd9c501a7b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a976683178e086cd2a1a801fd9c501a7b">&#9670;&#160;</a></span>SDLGraphicsProgram()</h2>
@@ -197,7 +216,19 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bindings_8cpp_source.html#l00043">43</a> of file <a class="el" href="bindings_8cpp_source.html">bindings.cpp</a>.</p>
+<p>Constructor. </p>
+<p>This works for Mac.</p>
+<p>==================== Libraries ================== Depending on the operating system we use The paths to SDL are actually different. The #define statement should be passed in when compiling using the -D argument. This gives an example of how a programmer may support multiple platforms with different dependencies. The glad library helps setup OpenGL extensions. Purpose: This class sets up a full graphics program using SDL Initialization function Returns a true or false value based on successful completion of setup. Takes in dimensions of window. </p>
+<p>Initialization flag</p>
+<p>String to hold any errors that occur.</p>
+<p>The window we'll be rendering to</p>
+<p>Initialize SDL</p>
+<p>Create window</p>
+<p>Create a Renderer to draw on</p>
+<p>Check if Renderer did not create.</p>
+<p>If initialization did not work, then print out a list of errors in the constructor.</p>
+
+<p class="definition">Definition at line <a class="el" href="bindings_8cpp_source.html#l00040">40</a> of file <a class="el" href="bindings_8cpp_source.html">bindings.cpp</a>.</p>
 
 </div>
 </div>
@@ -216,7 +247,13 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bindings_8cpp_source.html#l00103">103</a> of file <a class="el" href="bindings_8cpp_source.html">bindings.cpp</a>.</p>
+<p>Destructor. </p>
+<p>Proper shutdown of SDL and destroy initialized objects. </p>
+<p>Destroy window</p>
+<p>Point gWindow to NULL to ensure it points to nothing.</p>
+<p>Quit SDL subsystems</p>
+
+<p class="definition">Definition at line <a class="el" href="bindings_8cpp_source.html#l00100">100</a> of file <a class="el" href="bindings_8cpp_source.html">bindings.cpp</a>.</p>
 
 </div>
 </div>
@@ -237,7 +274,10 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bindings_8cpp_source.html#l00279">279</a> of file <a class="el" href="bindings_8cpp_source.html">bindings.cpp</a>.</p>
+<p>add an instantiated gameobject to the game scene. </p>
+<p>add sprite when obj added to scene.</p>
+
+<p class="definition">Definition at line <a class="el" href="bindings_8cpp_source.html#l00276">276</a> of file <a class="el" href="bindings_8cpp_source.html">bindings.cpp</a>.</p>
 
 </div>
 </div>
@@ -256,7 +296,10 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bindings_8cpp_source.html#l00125">125</a> of file <a class="el" href="bindings_8cpp_source.html">bindings.cpp</a>.</p>
+<p>Clears the screen. </p>
+<p>clear Clears the screen </p>
+
+<p class="definition">Definition at line <a class="el" href="bindings_8cpp_source.html#l00122">122</a> of file <a class="el" href="bindings_8cpp_source.html">bindings.cpp</a>.</p>
 
 </div>
 </div>
@@ -276,7 +319,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bindings_8cpp_source.html#l00165">165</a> of file <a class="el" href="bindings_8cpp_source.html">bindings.cpp</a>.</p>
+<p>Delay rendering. </p>
+
+<p class="definition">Definition at line <a class="el" href="bindings_8cpp_source.html#l00162">162</a> of file <a class="el" href="bindings_8cpp_source.html">bindings.cpp</a>.</p>
 
 </div>
 </div>
@@ -336,7 +381,10 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bindings_8cpp_source.html#l00273">273</a> of file <a class="el" href="bindings_8cpp_source.html">bindings.cpp</a>.</p>
+<p>Draw a simple rectangle. </p>
+<p>Okay, render our rectangles! </p>
+
+<p class="definition">Definition at line <a class="el" href="bindings_8cpp_source.html#l00270">270</a> of file <a class="el" href="bindings_8cpp_source.html">bindings.cpp</a>.</p>
 
 </div>
 </div>
@@ -355,7 +403,10 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bindings_8cpp_source.html#l00133">133</a> of file <a class="el" href="bindings_8cpp_source.html">bindings.cpp</a>.</p>
+<p>Flips to new buffer. </p>
+<p>Flip The flip function gets called once per loop It swaps out the previvous frame in a double-buffering system </p>
+
+<p class="definition">Definition at line <a class="el" href="bindings_8cpp_source.html#l00130">130</a> of file <a class="el" href="bindings_8cpp_source.html">bindings.cpp</a>.</p>
 
 </div>
 </div>
@@ -374,7 +425,10 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bindings_8cpp_source.html#l00268">268</a> of file <a class="el" href="bindings_8cpp_source.html">bindings.cpp</a>.</p>
+<p>Get Pointer to Renderer. </p>
+<p>Get Pointer to a specific SDLRenderer. </p>
+
+<p class="definition">Definition at line <a class="el" href="bindings_8cpp_source.html#l00265">265</a> of file <a class="el" href="bindings_8cpp_source.html">bindings.cpp</a>.</p>
 
 </div>
 </div>
@@ -393,7 +447,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bindings_8cpp_source.html#l00263">263</a> of file <a class="el" href="bindings_8cpp_source.html">bindings.cpp</a>.</p>
+<p>Get Pointer to Window. </p>
+
+<p class="definition">Definition at line <a class="el" href="bindings_8cpp_source.html#l00260">260</a> of file <a class="el" href="bindings_8cpp_source.html">bindings.cpp</a>.</p>
 
 </div>
 </div>
@@ -423,7 +479,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bindings_8cpp_source.html#l00358">358</a> of file <a class="el" href="bindings_8cpp_source.html">bindings.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bindings_8cpp_source.html#l00355">355</a> of file <a class="el" href="bindings_8cpp_source.html">bindings.cpp</a>.</p>
 
 </div>
 </div>
@@ -442,7 +498,11 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bindings_8cpp_source.html#l00115">115</a> of file <a class="el" href="bindings_8cpp_source.html">bindings.cpp</a>.</p>
+<p>Setup OpenGL. </p>
+<p>Initialize OpenGL Setup any of our shaders here. </p>
+<p>Success flag</p>
+
+<p class="definition">Definition at line <a class="el" href="bindings_8cpp_source.html#l00112">112</a> of file <a class="el" href="bindings_8cpp_source.html">bindings.cpp</a>.</p>
 
 </div>
 </div>
@@ -471,8 +531,9 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>check for a collision with an instance of a specific object returns the collided object if found </p>
 
-<p class="definition">Definition at line <a class="el" href="bindings_8cpp_source.html#l00317">317</a> of file <a class="el" href="bindings_8cpp_source.html">bindings.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bindings_8cpp_source.html#l00314">314</a> of file <a class="el" href="bindings_8cpp_source.html">bindings.cpp</a>.</p>
 
 </div>
 </div>
@@ -491,7 +552,19 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bindings_8cpp_source.html#l00170">170</a> of file <a class="el" href="bindings_8cpp_source.html">bindings.cpp</a>.</p>
+<p>loop that runs forever </p>
+<p>Loops forever. </p>
+<p>Main loop flag If this is quit = 'true' then the program terminates.</p>
+<p>Event handler that handles various events in SDL that are related to input and output</p>
+<p>Enable text input</p>
+<p>While application is running while(!quit){</p>
+<p>Handle events on queue</p>
+<p>User posts an event to quit An example is hitting the "x" in the corner of the window.</p>
+<p>End SDL_PollEvent loop.</p>
+<p>Update screen of our specified window</p>
+<p>Disable text input</p>
+
+<p class="definition">Definition at line <a class="el" href="bindings_8cpp_source.html#l00167">167</a> of file <a class="el" href="bindings_8cpp_source.html">bindings.cpp</a>.</p>
 
 </div>
 </div>
@@ -511,7 +584,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bindings_8cpp_source.html#l00328">328</a> of file <a class="el" href="bindings_8cpp_source.html">bindings.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bindings_8cpp_source.html#l00325">325</a> of file <a class="el" href="bindings_8cpp_source.html">bindings.cpp</a>.</p>
 
 </div>
 </div>
@@ -531,7 +604,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bindings_8cpp_source.html#l00304">304</a> of file <a class="el" href="bindings_8cpp_source.html">bindings.cpp</a>.</p>
+<p>remove all gameobjects from the scene except this one </p>
+
+<p class="definition">Definition at line <a class="el" href="bindings_8cpp_source.html#l00301">301</a> of file <a class="el" href="bindings_8cpp_source.html">bindings.cpp</a>.</p>
 
 </div>
 </div>
@@ -551,7 +626,10 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bindings_8cpp_source.html#l00294">294</a> of file <a class="el" href="bindings_8cpp_source.html">bindings.cpp</a>.</p>
+<p>remove gameobject from scene and destroy it. </p>
+<p>remove from gameobjects array</p>
+
+<p class="definition">Definition at line <a class="el" href="bindings_8cpp_source.html#l00291">291</a> of file <a class="el" href="bindings_8cpp_source.html">bindings.cpp</a>.</p>
 
 </div>
 </div>
@@ -617,7 +695,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bindings_8cpp_source.html#l00345">345</a> of file <a class="el" href="bindings_8cpp_source.html">bindings.cpp</a>.</p>
+<p>Set the tilemap. </p>
+
+<p class="definition">Definition at line <a class="el" href="bindings_8cpp_source.html#l00342">342</a> of file <a class="el" href="bindings_8cpp_source.html">bindings.cpp</a>.</p>
 
 </div>
 </div>
@@ -637,7 +717,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bindings_8cpp_source.html#l00336">336</a> of file <a class="el" href="bindings_8cpp_source.html">bindings.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bindings_8cpp_source.html#l00333">333</a> of file <a class="el" href="bindings_8cpp_source.html">bindings.cpp</a>.</p>
 
 </div>
 </div>
@@ -654,7 +734,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_s_d_l_graphics_program_8hpp_source.html#l00088">88</a> of file <a class="el" href="_s_d_l_graphics_program_8hpp_source.html">SDLGraphicsProgram.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_s_d_l_graphics_program_8hpp_source.html#l00089">89</a> of file <a class="el" href="_s_d_l_graphics_program_8hpp_source.html">SDLGraphicsProgram.hpp</a>.</p>
 
 </div>
 </div>
@@ -670,7 +750,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_s_d_l_graphics_program_8hpp_source.html#l00090">90</a> of file <a class="el" href="_s_d_l_graphics_program_8hpp_source.html">SDLGraphicsProgram.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_s_d_l_graphics_program_8hpp_source.html#l00091">91</a> of file <a class="el" href="_s_d_l_graphics_program_8hpp_source.html">SDLGraphicsProgram.hpp</a>.</p>
 
 </div>
 </div>
@@ -686,7 +766,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_s_d_l_graphics_program_8hpp_source.html#l00081">81</a> of file <a class="el" href="_s_d_l_graphics_program_8hpp_source.html">SDLGraphicsProgram.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_s_d_l_graphics_program_8hpp_source.html#l00082">82</a> of file <a class="el" href="_s_d_l_graphics_program_8hpp_source.html">SDLGraphicsProgram.hpp</a>.</p>
 
 </div>
 </div>
@@ -702,7 +782,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_s_d_l_graphics_program_8hpp_source.html#l00082">82</a> of file <a class="el" href="_s_d_l_graphics_program_8hpp_source.html">SDLGraphicsProgram.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_s_d_l_graphics_program_8hpp_source.html#l00083">83</a> of file <a class="el" href="_s_d_l_graphics_program_8hpp_source.html">SDLGraphicsProgram.hpp</a>.</p>
 
 </div>
 </div>
@@ -718,7 +798,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_s_d_l_graphics_program_8hpp_source.html#l00083">83</a> of file <a class="el" href="_s_d_l_graphics_program_8hpp_source.html">SDLGraphicsProgram.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_s_d_l_graphics_program_8hpp_source.html#l00084">84</a> of file <a class="el" href="_s_d_l_graphics_program_8hpp_source.html">SDLGraphicsProgram.hpp</a>.</p>
 
 </div>
 </div>
@@ -734,7 +814,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_s_d_l_graphics_program_8hpp_source.html#l00089">89</a> of file <a class="el" href="_s_d_l_graphics_program_8hpp_source.html">SDLGraphicsProgram.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_s_d_l_graphics_program_8hpp_source.html#l00090">90</a> of file <a class="el" href="_s_d_l_graphics_program_8hpp_source.html">SDLGraphicsProgram.hpp</a>.</p>
 
 </div>
 </div>
@@ -750,7 +830,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_s_d_l_graphics_program_8hpp_source.html#l00085">85</a> of file <a class="el" href="_s_d_l_graphics_program_8hpp_source.html">SDLGraphicsProgram.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_s_d_l_graphics_program_8hpp_source.html#l00086">86</a> of file <a class="el" href="_s_d_l_graphics_program_8hpp_source.html">SDLGraphicsProgram.hpp</a>.</p>
 
 </div>
 </div>
@@ -766,7 +846,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_s_d_l_graphics_program_8hpp_source.html#l00080">80</a> of file <a class="el" href="_s_d_l_graphics_program_8hpp_source.html">SDLGraphicsProgram.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_s_d_l_graphics_program_8hpp_source.html#l00081">81</a> of file <a class="el" href="_s_d_l_graphics_program_8hpp_source.html">SDLGraphicsProgram.hpp</a>.</p>
 
 </div>
 </div>
@@ -782,7 +862,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_s_d_l_graphics_program_8hpp_source.html#l00087">87</a> of file <a class="el" href="_s_d_l_graphics_program_8hpp_source.html">SDLGraphicsProgram.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_s_d_l_graphics_program_8hpp_source.html#l00088">88</a> of file <a class="el" href="_s_d_l_graphics_program_8hpp_source.html">SDLGraphicsProgram.hpp</a>.</p>
 
 </div>
 </div>
@@ -798,7 +878,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_s_d_l_graphics_program_8hpp_source.html#l00093">93</a> of file <a class="el" href="_s_d_l_graphics_program_8hpp_source.html">SDLGraphicsProgram.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_s_d_l_graphics_program_8hpp_source.html#l00094">94</a> of file <a class="el" href="_s_d_l_graphics_program_8hpp_source.html">SDLGraphicsProgram.hpp</a>.</p>
 
 </div>
 </div>
@@ -814,7 +894,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_s_d_l_graphics_program_8hpp_source.html#l00094">94</a> of file <a class="el" href="_s_d_l_graphics_program_8hpp_source.html">SDLGraphicsProgram.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_s_d_l_graphics_program_8hpp_source.html#l00095">95</a> of file <a class="el" href="_s_d_l_graphics_program_8hpp_source.html">SDLGraphicsProgram.hpp</a>.</p>
 
 </div>
 </div>
@@ -830,7 +910,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_s_d_l_graphics_program_8hpp_source.html#l00091">91</a> of file <a class="el" href="_s_d_l_graphics_program_8hpp_source.html">SDLGraphicsProgram.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_s_d_l_graphics_program_8hpp_source.html#l00092">92</a> of file <a class="el" href="_s_d_l_graphics_program_8hpp_source.html">SDLGraphicsProgram.hpp</a>.</p>
 
 </div>
 </div>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Compact Game Engine: TileMap Class Reference</title>
+<title>Nebula Game Engine: TileMap Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,9 +26,9 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="EngineIcon.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">Compact Game Engine<span id="projectnumber">&#160;1.08</span>
+   <div id="projectname">Nebula Game Engine<span id="projectnumber">&#160;1.14</span>
    </div>
-   <div id="projectbrief">A small game engine with GUI compatability, by Safi Azam Hyun Joon Kim, Tanner Badey, and Luis Garcia</div>
+   <div id="projectbrief">A small game engine for 2D shooters with audio, by Safi Azam Hyun Joon Kim, Tanner Badey, and Luis Garcia</div>
   </td>
  </tr>
  </tbody>
@@ -99,23 +99,32 @@ $(document).ready(function(){initNavTree('class_tile_map.html',''); initResizabl
 </div><!--header-->
 <div class="contents">
 
+<p>Tilemap or "tiles" header. Overview.  
+ <a href="class_tile_map.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_tilemap_8hpp_source.html">Tilemap.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ae184229312cab8fe2c0069d58c8dd7b5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tile_map.html#ae184229312cab8fe2c0069d58c8dd7b5">TileMap</a> (std::string tileSheetFileName, int rows, int cols, int _TileWidth, int _TileHeight, int _mapX, int _mapY, int *<a class="el" href="glad_8h.html#a0f78eecb0891cce3bdfc815b971866a1">data</a>, SDL_Renderer *ren)</td></tr>
+<tr class="memdesc:ae184229312cab8fe2c0069d58c8dd7b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tiles Defined. Src.  <br /></td></tr>
 <tr class="separator:ae184229312cab8fe2c0069d58c8dd7b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3448728e45d6a43fff3a02d4c6d72e9d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tile_map.html#a3448728e45d6a43fff3a02d4c6d72e9d">~TileMap</a> ()</td></tr>
+<tr class="memdesc:a3448728e45d6a43fff3a02d4c6d72e9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <br /></td></tr>
 <tr class="separator:a3448728e45d6a43fff3a02d4c6d72e9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3786a95e0a0115f461dfcced0ee6b88e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tile_map.html#a3786a95e0a0115f461dfcced0ee6b88e">GenerateSimpleMap</a> ()</td></tr>
+<tr class="memdesc:a3786a95e0a0115f461dfcced0ee6b88e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function to gegenerate a simlpe map.  <br /></td></tr>
 <tr class="separator:a3786a95e0a0115f461dfcced0ee6b88e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a265e161863487c9d1998f8e869949148"><td class="memItemLeft" align="right" valign="top"><a class="el" href="glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tile_map.html#a265e161863487c9d1998f8e869949148">PrintMap</a> ()</td></tr>
 <tr class="separator:a265e161863487c9d1998f8e869949148"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6da6909d12aa2da56df1d10a5ac7a6e2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tile_map.html#a6da6909d12aa2da56df1d10a5ac7a6e2">SetTile</a> (int <a class="el" href="glad_8h.html#a92d0386e5c19fb81ea88c9f99644ab1d">x</a>, int <a class="el" href="glad_8h.html#a66ddd433d2cacfe27f5906b7e86faeed">y</a>, int <a class="el" href="glad_8h.html#a890efa53b3d7deeeced6f3a0d6653ed3">type</a>)</td></tr>
+<tr class="memdesc:a6da6909d12aa2da56df1d10a5ac7a6e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a tile a certain type.  <br /></td></tr>
 <tr class="separator:a6da6909d12aa2da56df1d10a5ac7a6e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9be13296fe7731f0788340e59922923c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tile_map.html#a9be13296fe7731f0788340e59922923c">GetTileType</a> (int <a class="el" href="glad_8h.html#a92d0386e5c19fb81ea88c9f99644ab1d">x</a>, int <a class="el" href="glad_8h.html#a66ddd433d2cacfe27f5906b7e86faeed">y</a>)</td></tr>
+<tr class="memdesc:a9be13296fe7731f0788340e59922923c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns what the tile is at a specific position.  <br /></td></tr>
 <tr class="separator:a9be13296fe7731f0788340e59922923c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a913256cf6ec1cae937d6f92477904230"><td class="memItemLeft" align="right" valign="top"><a class="el" href="glad_8h.html#a950fc91edb4504f62f1c577bf4727c29">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tile_map.html#a913256cf6ec1cae937d6f92477904230">Render</a> (SDL_Renderer *ren, int x_scroll, int y_scroll)</td></tr>
+<tr class="memdesc:a913256cf6ec1cae937d6f92477904230"><td class="mdescLeft">&#160;</td><td class="mdescRight">render <a class="el" href="class_tile_map.html" title="Tilemap or &quot;tiles&quot; header. Overview.">TileMap</a>  <br /></td></tr>
 <tr class="separator:a913256cf6ec1cae937d6f92477904230"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
@@ -127,9 +136,10 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a129234bd21081565618eed5053c35348"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This is a minimal implementation of a <a class="el" href="class_tile_map.html">TileMap</a> </p>
+<div class="textblock"><p>Tilemap or "tiles" header. Overview. </p>
+<p>This is a minimal implementation of a <a class="el" href="class_tile_map.html" title="Tilemap or &quot;tiles&quot; header. Overview.">TileMap</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="_tilemap_8hpp_source.html#l00015">15</a> of file <a class="el" href="_tilemap_8hpp_source.html">Tilemap.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_tilemap_8hpp_source.html#l00016">16</a> of file <a class="el" href="_tilemap_8hpp_source.html">Tilemap.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ae184229312cab8fe2c0069d58c8dd7b5" name="ae184229312cab8fe2c0069d58c8dd7b5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae184229312cab8fe2c0069d58c8dd7b5">&#9670;&#160;</a></span>TileMap()</h2>
@@ -198,9 +208,19 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Constructor for a tilemap </p>
 
-<p class="definition">Definition at line <a class="el" href="_tile_map_8cpp_source.html#l00016">16</a> of file <a class="el" href="_tile_map_8cpp_source.html">TileMap.cpp</a>.</p>
+<p>Tiles Defined. Src. </p>
+<p>Constructor for a tilemap</p>
+<p>Creates a new tile map. rows and cols are how many different tiles there are in the sprite sheet</p>
+<p>_TileWidth and _TileHeight are the size of each individual tile in the sprite sheet. (Typically this works best if they are square for this implementation.)</p>
+<p>_mapX, and _mapY are the size of the tilemap. This is the actual number of tiles in the game that the player sees, not how many tiles are in the actual sprite sheet file loaded. </p>
+<p>Setup variables</p>
+<p>Load the <a class="el" href="class_tile_map.html" title="Tilemap or &quot;tiles&quot; header. Overview.">TileMap</a> Image This is the image that will get sliced into smaller subsections of individual tiles.</p>
+<p>Create a texture from our surface Textures run faster and take advantage of hardware acceleration</p>
+<p>Setup the <a class="el" href="class_tile_map.html" title="Tilemap or &quot;tiles&quot; header. Overview.">TileMap</a> array This sets each tile to '0'</p>
+<p>Default value is no tile.</p>
+
+<p class="definition">Definition at line <a class="el" href="_tile_map_8cpp_source.html#l00020">20</a> of file <a class="el" href="_tile_map_8cpp_source.html">TileMap.cpp</a>.</p>
 
 </div>
 </div>
@@ -218,9 +238,12 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Destructor for a tilemap </p>
 
-<p class="definition">Definition at line <a class="el" href="_tile_map_8cpp_source.html#l00051">51</a> of file <a class="el" href="_tile_map_8cpp_source.html">TileMap.cpp</a>.</p>
+<p>Destructor. </p>
+<p>Destructor for a tilemap </p>
+<p>Remove our <a class="el" href="class_tile_map.html" title="Tilemap or &quot;tiles&quot; header. Overview.">TileMap</a></p>
+
+<p class="definition">Definition at line <a class="el" href="_tile_map_8cpp_source.html#l00055">55</a> of file <a class="el" href="_tile_map_8cpp_source.html">TileMap.cpp</a>.</p>
 
 </div>
 </div>
@@ -239,9 +262,11 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Helper function to gegenerate a simlpe map. </p>
 <p>Temporary function for generating a simple map to display some tiles </p>
 
-<p class="definition">Definition at line <a class="el" href="_tile_map_8cpp_source.html#l00058">58</a> of file <a class="el" href="_tile_map_8cpp_source.html">TileMap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_tile_map_8cpp_source.html#l00062">62</a> of file <a class="el" href="_tile_map_8cpp_source.html">TileMap.cpp</a>.</p>
 
 </div>
 </div>
@@ -270,9 +295,11 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Returns what the tile is at a specific position. </p>
 <p>Return the tile type at an x and y position </p>
 
-<p class="definition">Definition at line <a class="el" href="_tile_map_8cpp_source.html#l00089">89</a> of file <a class="el" href="_tile_map_8cpp_source.html">TileMap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_tile_map_8cpp_source.html#l00093">93</a> of file <a class="el" href="_tile_map_8cpp_source.html">TileMap.cpp</a>.</p>
 
 </div>
 </div>
@@ -290,9 +317,10 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Function for printing text to console </p>
+<p>Function for printing text to console</p>
+<p>Helper function to print out the tile map to the console </p>
 
-<p class="definition">Definition at line <a class="el" href="_tile_map_8cpp_source.html#l00073">73</a> of file <a class="el" href="_tile_map_8cpp_source.html">TileMap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_tile_map_8cpp_source.html#l00077">77</a> of file <a class="el" href="_tile_map_8cpp_source.html">TileMap.cpp</a>.</p>
 
 </div>
 </div>
@@ -327,9 +355,14 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Draw all of the tiles in the tilemap </p>
 
-<p class="definition">Definition at line <a class="el" href="_tile_map_8cpp_source.html#l00094">94</a> of file <a class="el" href="_tile_map_8cpp_source.html">TileMap.cpp</a>.</p>
+<p>render <a class="el" href="class_tile_map.html" title="Tilemap or &quot;tiles&quot; header. Overview.">TileMap</a> </p>
+<p>Draw all of the tiles in the tilemap </p>
+<p>Select our Tile</p>
+<p>Reverse lookup, given the tile type and then figuring out how to select it from the texture atlas.</p>
+<p>Render our Tile at this location</p>
+
+<p class="definition">Definition at line <a class="el" href="_tile_map_8cpp_source.html#l00098">98</a> of file <a class="el" href="_tile_map_8cpp_source.html">TileMap.cpp</a>.</p>
 
 </div>
 </div>
@@ -364,9 +397,11 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Sets a tile a certain type. </p>
 <p>Set the 'type' of tile at an x and y position </p>
 
-<p class="definition">Definition at line <a class="el" href="_tile_map_8cpp_source.html#l00083">83</a> of file <a class="el" href="_tile_map_8cpp_source.html">TileMap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_tile_map_8cpp_source.html#l00087">87</a> of file <a class="el" href="_tile_map_8cpp_source.html">TileMap.cpp</a>.</p>
 
 </div>
 </div>
@@ -383,7 +418,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_tilemap_8hpp_source.html#l00049">49</a> of file <a class="el" href="_tilemap_8hpp_source.html">Tilemap.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_tilemap_8hpp_source.html#l00050">50</a> of file <a class="el" href="_tilemap_8hpp_source.html">Tilemap.hpp</a>.</p>
 
 </div>
 </div>
@@ -401,7 +436,7 @@ Public Attributes</h2></td></tr>
 
 <p>How big each tile is. </p>
 
-<p class="definition">Definition at line <a class="el" href="_tilemap_8hpp_source.html#l00048">48</a> of file <a class="el" href="_tilemap_8hpp_source.html">Tilemap.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_tilemap_8hpp_source.html#l00049">49</a> of file <a class="el" href="_tilemap_8hpp_source.html">Tilemap.hpp</a>.</p>
 
 </div>
 </div>

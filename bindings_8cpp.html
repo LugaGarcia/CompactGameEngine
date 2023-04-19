@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Compact Game Engine: Engine/src/bindings.cpp File Reference</title>
+<title>Nebula Game Engine: Engine/src/bindings.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,9 +26,9 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="EngineIcon.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">Compact Game Engine<span id="projectnumber">&#160;1.08</span>
+   <div id="projectname">Nebula Game Engine<span id="projectnumber">&#160;1.14</span>
    </div>
-   <div id="projectbrief">A small game engine with GUI compatability, by Safi Azam Hyun Joon Kim, Tanner Badey, and Luis Garcia</div>
+   <div id="projectbrief">A small game engine for 2D shooters with audio, by Safi Azam Hyun Joon Kim, Tanner Badey, and Luis Garcia</div>
   </td>
  </tr>
  </tbody>
@@ -116,6 +116,7 @@ $(document).ready(function(){initNavTree('bindings_8cpp.html',''); initResizable
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:a8be3d2000b2dbeff87d1c35dd045564b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bindings_8cpp.html#a8be3d2000b2dbeff87d1c35dd045564b">SDLGRAPHICSPROGRAM</a></td></tr>
+<tr class="memdesc:a8be3d2000b2dbeff87d1c35dd045564b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connects CPP code to python with PyBind11.  <br /></td></tr>
 <tr class="separator:a8be3d2000b2dbeff87d1c35dd045564b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
@@ -138,7 +139,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bindings_8cpp_source.html#l00002">2</a> of file <a class="el" href="bindings_8cpp_source.html">bindings.cpp</a>.</p>
+<p>Connects CPP code to python with PyBind11. </p>
+
+<p class="definition">Definition at line <a class="el" href="bindings_8cpp_source.html#l00003">3</a> of file <a class="el" href="bindings_8cpp_source.html">bindings.cpp</a>.</p>
 
 </div>
 </div>
@@ -205,7 +208,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bindings_8cpp_source.html#l00311">311</a> of file <a class="el" href="bindings_8cpp_source.html">bindings.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bindings_8cpp_source.html#l00308">308</a> of file <a class="el" href="bindings_8cpp_source.html">bindings.cpp</a>.</p>
 
 </div>
 </div>
@@ -234,8 +237,16 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Creates a macro function that will be called whenever the module is imported into python 'mygameengine' is what we 'import' into python. 'm' is the interface (creates a py::module object) for which the bindings are created. The magic here is in 'template metaprogramming' </p>
+<p>our constructor</p>
+<p>Expose member methods</p>
+<p>our constructor</p>
+<p>Expose member methods</p>
+<p>.def_readwrite("name",&amp;GameObject::name); // Expose member variables</p>
+<p>We do not need to expose everything to our users! .def("getSDLWindow", &amp;<a class="el" href="class_s_d_l_graphics_program.html#a42e9554ec5b497551530bd5a8ca9585f" title="Get Pointer to Window.">SDLGraphicsProgram::getSDLWindow</a>, py::return_value_policy::reference) <br  />
+</p>
 
-<p class="definition">Definition at line <a class="el" href="bindings_8cpp_source.html#l00371">371</a> of file <a class="el" href="bindings_8cpp_source.html">bindings.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bindings_8cpp_source.html#l00369">369</a> of file <a class="el" href="bindings_8cpp_source.html">bindings.cpp</a>.</p>
 
 </div>
 </div>
