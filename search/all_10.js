@@ -8,7 +8,7 @@ var searchData=
   ['pfnglmapbufferproc_5',['PFNGLMAPBUFFERPROC',['../glad_8h.html#ac343b5b7f89319bf600dc66186075a24',1,'glad.h']]],
   ['pfnglmapbufferrangeproc_6',['PFNGLMAPBUFFERRANGEPROC',['../glad_8h.html#a9a67b52c8e878701c69d3830b698fbb9',1,'glad.h']]],
   ['pixels_7',['pixels',['../glad_8h.html#a620525fb1b4102cd9522c24b0e7d3e40',1,'glad.h']]],
-  ['player_8',['player',['../namespaceplayer.html',1,'']]],
+  ['player_8',['player',['../namespaceplayer.html',1,'player'],['../classbullet_1_1_bullet.html#a1efff1a02d5d5f93e8a4599247fc625a',1,'bullet.Bullet.player()']]],
   ['player_9',['Player',['../classplayer_1_1_player.html',1,'player']]],
   ['player_2epy_10',['player.py',['../player_8py.html',1,'']]],
   ['player_5fbbox_5fh_11',['PLAYER_BBOX_H',['../namespaceplayer.html#a514f2a4212e45f711e14669a31d4a206',1,'player']]],

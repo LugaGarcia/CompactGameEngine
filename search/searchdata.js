@@ -5,12 +5,12 @@ var indexSectionsWithContent =
   2: "beilopt",
   3: "abegikloprst",
   4: "_acdefgilprstuv~",
-  5: "abcdefghiklmoprstuvwxy",
+  5: "abcdefghiklmoprstuvxy",
   6: "abcdefghijklmnopqrstuvwxyz",
   7: "k",
   8: "k",
   9: "_agks",
-  10: "a"
+  10: "d"
 };
 
 var indexSectionNames =

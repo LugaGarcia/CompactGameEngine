@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['damage_0',['damage',['../classenemy_1_1_enemy.html#ade16a246ec1aea01d679632040be775c',1,'enemy::Enemy']]],
+  ['damage_0',['damage',['../classenemy_1_1_enemy.html#ade16a246ec1aea01d679632040be775c',1,'enemy.Enemy.damage()'],['../classplayer_1_1_player.html#ad6716dcd6beada2048b7ddd7a7ac8610',1,'player.Player.damage()']]],
   ['data_1',['data',['../glad_8h.html#a0f78eecb0891cce3bdfc815b971866a1',1,'data():&#160;glad.h'],['../namespacetest.html#a57610ad5fb51969705f6880454118611',1,'test.data()']]],
   ['delay_2',['delay',['../class_s_d_l_graphics_program.html#a299c62853b3f28fc3930880fc4c128ba',1,'SDLGraphicsProgram']]],
   ['depth_3',['depth',['../glad_8h.html#a2aa5ce5567a58e4da543ce468fb1711a',1,'glad.h']]],
@@ -14,13 +14,14 @@ var searchData=
   ['dir_11',['dir',['../namespacetest.html#a13c67483cabb574d35e005ecdb5d4e2c',1,'test']]],
   ['divisor_12',['divisor',['../glad_8h.html#a8663d897b5393d6facc1df40530f841d',1,'glad.h']]],
   ['dmg_13',['dmg',['../classbullet_1_1_bullet.html#a28c76e2012ae28d4e0c25e52a1f82678',1,'bullet.Bullet.dmg()'],['../classenemy__bullet_1_1_enemy_bullet.html#a0cf841ee0b5f05758a99f59e46d20baf',1,'enemy_bullet.EnemyBullet.dmg()'],['../classobstacle_1_1_obstacle.html#a63096ac0da22a030738146cb9aafd11f',1,'obstacle.Obstacle.dmg()'],['../classplayer_1_1_player.html#a4ff49afe255def11e2a869f23c910545',1,'player.Player.dmg()']]],
-  ['dpfail_14',['dpfail',['../glad_8h.html#afb5ba0587287e9f41ad8ba8ba3813267',1,'glad.h']]],
-  ['dppass_15',['dppass',['../glad_8h.html#ac34ccc579f21686a5802750e270e8326',1,'glad.h']]],
-  ['drawbuffer_16',['drawbuffer',['../glad_8h.html#a1930b9f69a989b3c108304a7a1a21d38',1,'glad.h']]],
-  ['drawcount_17',['drawcount',['../glad_8h.html#acbb30fa5b62896f0375592b3b06472f3',1,'glad.h']]],
-  ['drawrectangle_18',['DrawRectangle',['../class_s_d_l_graphics_program.html#a6d247c7dc69967b8222e4ea8392708fc',1,'SDLGraphicsProgram']]],
-  ['dstx0_19',['dstX0',['../glad_8h.html#af088612058ae25aaefd76210fcdb480e',1,'glad.h']]],
-  ['dstx1_20',['dstX1',['../glad_8h.html#a67695e2103461680c794506cd17ac2e2',1,'glad.h']]],
-  ['dsty0_21',['dstY0',['../glad_8h.html#a828a0708c8e3ebe901aba9022b72d904',1,'glad.h']]],
-  ['dsty1_22',['dstY1',['../glad_8h.html#a164758878d9314363398e6f128dd9fbe',1,'glad.h']]]
+  ['documentation_20for_20nebula_14',['DOCUMENTATION for Nebula',['../md__engine__r_e_a_d_m_e.html',1,'']]],
+  ['dpfail_15',['dpfail',['../glad_8h.html#afb5ba0587287e9f41ad8ba8ba3813267',1,'glad.h']]],
+  ['dppass_16',['dppass',['../glad_8h.html#ac34ccc579f21686a5802750e270e8326',1,'glad.h']]],
+  ['drawbuffer_17',['drawbuffer',['../glad_8h.html#a1930b9f69a989b3c108304a7a1a21d38',1,'glad.h']]],
+  ['drawcount_18',['drawcount',['../glad_8h.html#acbb30fa5b62896f0375592b3b06472f3',1,'glad.h']]],
+  ['drawrectangle_19',['DrawRectangle',['../class_s_d_l_graphics_program.html#a6d247c7dc69967b8222e4ea8392708fc',1,'SDLGraphicsProgram']]],
+  ['dstx0_20',['dstX0',['../glad_8h.html#af088612058ae25aaefd76210fcdb480e',1,'glad.h']]],
+  ['dstx1_21',['dstX1',['../glad_8h.html#a67695e2103461680c794506cd17ac2e2',1,'glad.h']]],
+  ['dsty0_22',['dstY0',['../glad_8h.html#a828a0708c8e3ebe901aba9022b72d904',1,'glad.h']]],
+  ['dsty1_23',['dstY1',['../glad_8h.html#a164758878d9314363398e6f128dd9fbe',1,'glad.h']]]
 ];
